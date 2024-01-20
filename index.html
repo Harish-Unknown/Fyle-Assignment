@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fyle Assignment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <link rel="stylesheet" href="design.css">
+    <script>
+        function addClassBasedOnWidth() {
+            const divElement = document.getElementById('pg'); // Replace with your div's actual ID
+            const isSmallScreen = window.innerWidth < 600;
+
+            divElement.classList.toggle('pagination-sm', isSmallScreen);
+        }
+
+        window.addEventListener('DOMContentLoaded', addClassBasedOnWidth);
+        window.addEventListener('resize', addClassBasedOnWidth);
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" id="logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Version: Free, Pro & Team
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Free, Pro & Team</a></li>
+                            <li><a class="dropdown-item" href="#">Enterprise Cloud</a></li>
+                            <li><a class="dropdown-item" href="#">Enterprise Server 3.11</a></li>
+                            <li><a class="dropdown-item" href="#">Enterprise Server 3.10</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">All Enterprise Server releases -></a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input id="search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <section class="profile">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 col-lg-3 ">
+                    <div class="profile-img pt-5 mt-2 d-flex justify-content-center align-items-center">
+                        <img src="images/pic-2.jpg" id="profile" alt="" class="img-fluid rounded-circle">
+                    </div>
+                    <div class="url d-flex align-items-center justify-content-center">
+                        <i class="bi bi-link"></i>
+                        <a class="p-2" href="#">https://github.com/John_doe</a>
+                    </div>
+                </div>
+                <div
+                    class="profile-cont col-12 col-md-8 col-lg-9 d-flex flex-column justify-content-end align-items-start pt-5">
+                    <div class="profile-cnt d-flex flex-column justify-content-center align-items-start">
+                        <h1>John Doe</h1>
+                        <p>Bio goes here</p>
+                        <div class="d-flex">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <p>Orlando</p>
+                        </div>
+                        <p>Twitter: <a href="#">https://twitter.com/john_doe</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="repository mt-5">
+        <div class="container">
+            <div class="row cards" style="display: none;" id="cards">
+                <div class="col-12 col-md-6 my-3 cds" id="card">
+                    <div class="card p-4 d-flex flex-column justify-content-center align-items-start">
+                        <h1 class="mx-2">Repo-1</h1>
+                        <p class="mx-2">Repo description goes here</p>
+                        <div class="w-100 d-flex flex-wrap justify-content-start align-items-center">
+                            <button class="btn btn-primary m-2">Javascript</button>
+                            <button class="btn btn-primary m-2">ReactJs</button>
+                            <button class="btn btn-primary m-2">AngularJs</button>
+                            <button class="btn btn-primary m-2">NodeJs</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <div class="row">   
+            <div class="pagination-section col-12">
+                <div id="pg" class="pagination justify-content-center">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/Javascript" src="script.js"></script>
+    <script src="https:R/cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</bodAN
+
+</html>

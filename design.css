@@ -1,0 +1,68 @@
+body{
+    background-color: #F6F1EE;
+}
+.card{
+    border: none;
+    border-radius: 12px;
+}
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.26) 0px 10px 36px 0px, rgba(0, 0, 0, 0.16) 0px 0px 0px 1px;
+}
+#logo{
+    width:120px;
+}
+
+.url a{
+    font-size: 15px; 
+}
+.url i{
+    font-size: 20px;
+}
+#profile{
+    width: 120px;
+}
+.profile-cont{
+    padding-left: 100px;
+}
+.card h1{
+    font-size: 35px;
+    color: #444;
+}
+.page-item a{
+    padding: 10px;
+    padding-inline: 20px;
+    font-weight: 600;
+}
+.previous-page a,.next-page a{
+    background-color: #0d6efd;
+    color: #fff;
+}
+.pagination-section{
+    margin-block: 3rem;
+}
+.actives{
+    background-color:  #0d6efd !important;
+    color: #fff !important;
+}
+.disable{
+    background-color: #fff !important;
+    color:  #0d6efd !important;
+}
+.hide {
+    display: none;
+}
+@media only screen and (min-width: 1000px){
+    #navbarSupportedContent{
+        border-left: solid;
+        padding-left: 20px;
+    }
+    #profile{
+        width: 150px !important;
+    }
+}
+@media only screen and (max-width: 768px){
+    .profile-cont{
+        align-items: center !important;
+        padding-left: 0px !important;
+    }
+}
